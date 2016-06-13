@@ -1,14 +1,14 @@
 (function (angular) {
   // Config
-  angular.module('angularFormatNumber.config', []).value('angularFormatNumber.config', {debug: true});
-  // Modules
-  angular.module('angularFormatNumber.directives', []);
-  angular.module('angularFormatNumber', ['angularFormatNumber.config','angularFormatNumber.directives']);
+  angular.module('formatNumber.config', []).value('formatNumber.config', {debug: true});
+  // Module
+  angular.module('formatNumber.directives', []);
+  angular.module('formatNumber', ['formatNumber.config','formatNumber.directives']);
 
   /**
    * Directive that allow to format number input
    */
-  var app = angular.module('angularFormatNumber');
+  var app = angular.module('formatNumber');
   app.directive('formatNumber', ['$filter', function ($filter) {
     return {
       require: '?ngModel',
