@@ -1,0 +1,30 @@
+{
+  "generator-angularjs-library": {
+    "props": {
+      "author": {
+        "name": "Aymeric Derbois",
+        "email": "aymeric.derbois@evest.fr"
+      },
+      "libraryName": {
+        "original": "Angular Format Number",
+        "camelized": "angularFormatNumber",
+        "dasherized": "angular-format-number",
+        "slugified": "angular-format-number",
+        "parts": [
+          "angular",
+          "format",
+          "number"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": false,
+      "includeModuleServices": false,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "librarySrcDirectory": "src/angular-format-number",
+      "libraryUnitTestDirectory": "test/unit/angular-format-number",
+      "libraryUnitE2eDirectory": "test/e2e/angular-format-number"
+    }
+  }
+}
