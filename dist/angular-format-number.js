@@ -3,7 +3,7 @@
   angular.module('formatNumber.config', []).value('formatNumber.config', {debug: true});
   // Module
   angular.module('formatNumber.directives', []);
-  angular.module('formatNumber', ['formatNumber.config','formatNumber.directives']);
+  angular.module('formatNumber', ['formatNumber.config', 'formatNumber.directives']);
 
   /**
    * Directive that allow to format number input
@@ -31,7 +31,7 @@
           }
 
           if (attrs.hasOwnProperty('max')) {
-            ctrl.$setValidity('max', number > parseInt(attrs.min));
+            ctrl.$setValidity('max', number < parseInt(attrs.max));
           }
 
           return number;
