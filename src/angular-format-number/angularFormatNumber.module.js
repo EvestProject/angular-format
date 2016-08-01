@@ -27,11 +27,11 @@
            * We try to make some validation if necessary (min, max)
            */
           if (attrs.hasOwnProperty('min')) {
-            ctrl.$setValidity('min', number > parseInt(attrs.min));
+            ctrl.$setValidity('min', number >= parseInt(attrs.min));
           }
 
           if (attrs.hasOwnProperty('max')) {
-            ctrl.$setValidity('max', number < parseInt(attrs.max));
+            ctrl.$setValidity('max', number <= parseInt(attrs.max));
           }
 
           return number;
